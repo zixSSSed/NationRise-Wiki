@@ -1,0 +1,7 @@
+# Конфиг для GitBook (если вики публикуется через gitbook.com).
+# GitBook берёт страницы из docs/, оглавление — из docs/SUMMARY.md.
+root: ./docs/
+
+structure:
+  readme: index.md
+  summary: SUMMARY.md

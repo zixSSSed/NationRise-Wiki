@@ -1,0 +1,98 @@
+/* Фирменная палитра NationRise: тёмный фон, кремовый текст, золото акцентом. */
+
+:root {
+  --nr-gold: #e0a93c;
+  --nr-gold-soft: #f2cf7a;
+  --nr-cream: #f7fadb;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #17141d;
+  --md-primary-fg-color--light: #241f2e;
+  --md-primary-fg-color--dark: #100e15;
+  --md-accent-fg-color: var(--nr-gold);
+  --md-default-bg-color: #131019;
+  --md-default-fg-color: #e8e6ef;
+  --md-default-fg-color--light: #b9b5c6;
+  --md-typeset-a-color: var(--nr-gold-soft);
+  --md-code-bg-color: #1c1826;
+  --md-footer-bg-color: #100e15;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #241f2e;
+  --md-accent-fg-color: #b8801f;
+  --md-typeset-a-color: #b8801f;
+}
+
+/* Шапка чуть плотнее, логотип крупнее */
+.md-header {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .06);
+}
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+/* Заголовки — золото, как в брендинге */
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--nr-cream);
+  font-weight: 800;
+  letter-spacing: -.01em;
+}
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: var(--nr-gold-soft);
+  font-weight: 700;
+  border-bottom: 1px solid rgba(224, 169, 60, .18);
+  padding-bottom: .25em;
+}
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: var(--nr-cream);
+}
+
+/* Таблицы: читаемые, с подсветкой строки */
+.md-typeset table:not([class]) {
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: .78rem;
+}
+.md-typeset table:not([class]) th {
+  background: rgba(224, 169, 60, .12);
+  color: var(--nr-cream);
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
+  background: rgba(255, 255, 255, .03);
+}
+
+/* Разделы сайдбара — как в GitBook: капсом, приглушённые */
+.md-nav__title {
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  opacity: .7;
+}
+.md-nav__link--active {
+  font-weight: 700;
+}
+
+/* Плашки-подсказки поспокойнее */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border-width: 0 0 0 3px;
+  font-size: .76rem;
+}
+
+/* Ссылки в тексте — подчёркивание только при наведении */
+.md-typeset a {
+  text-decoration: none;
+}
+.md-typeset a:hover {
+  text-decoration: underline;
+}
+
+/* Код-блоки */
+.md-typeset pre > code {
+  border-radius: 8px;
+}

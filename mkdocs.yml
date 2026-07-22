@@ -1,0 +1,103 @@
+site_name: NationRise — Вики
+site_description: Города, нации, войны и каторга. Полное руководство по серверу NationRise.
+site_url: https://wiki.nationrise.ru/
+docs_dir: docs
+site_dir: site
+copyright: NationRise
+
+theme:
+  name: material
+  language: ru
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+  font:
+    text: Montserrat
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+  features:
+    - navigation.sections      # разделы в сайдбаре, как в GitBook
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+
+extra_css:
+  - assets/nationrise.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: "#"
+      toc_depth: 3
+      # без этого якоря из кириллических заголовков вырождаются в пустые id
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: ru
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/
+      name: Discord проекта
+  generator: false
+
+nav:
+  - 👑 О сервере: index.md
+  - Начало игры:
+      - 🕐 Первые шаги: start.md
+      - 💰 Экономика и валюты: economy.md
+      - ⛏ Работы: jobs.md
+      - 🛒 Торговля: trade.md
+  - Город и нация:
+      - 🏙 Города: towns.md
+      - 🏛 Здания: buildings.md
+      - 🚩 Нации: nations.md
+      - ⚔ Войны: war.md
+      - ⛓ Каторга и плен: prison.md
+  - Развитие города:
+      - ☭ Идеологии: ideology.md
+      - ✝ Религии: religion.md
+  - Занятия:
+      - 🎣 Рыбалка: fishing.md
+      - 🎪 Ивенты: events.md
+      - 🗡 PvP: pvp.md
+      - 🧩 Прочие механики: extras.md
+  - Справка:
+      - 💎 Привилегии: donate.md
+      - 📖 Справочник команд: commands.md
+      - ❓ Частые вопросы: faq.md
