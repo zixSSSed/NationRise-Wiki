@@ -108,6 +108,17 @@
   text-decoration: underline;
 }
 
+/* Наказание рядом с правилом — красным, не переносится */
+.nak {
+  color: #ff6b6b;
+  font-weight: 700;
+  white-space: nowrap;
+}
+[data-md-color-scheme="default"] .nak { color: #c62828; }
+
+/* В таблицах правил колонка наказания — тоже красная и компактная */
+.md-typeset table:not([class]) td .nak { font-size: .95em; }
+
 /* Код-блоки */
 .md-typeset pre > code {
   border-radius: 8px;
