@@ -73,7 +73,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/discord
-      link: https://discord.gg/
+      link: https://discord.gg/nationrise
       name: Discord проекта
   generator: false
 
@@ -104,5 +104,5 @@ nav:
       - 📖 Справочник команд: commands.md
       - ❓ Частые вопросы: faq.md
       - 📜 Правила сервера: rules.md
-  - Для администрации:
-      - ✏ Как редактировать вики: editing.md
+# editing.md намеренно вне меню: инструкция для администрации, игрокам не нужна.
+# Открывается прямой ссылкой /editing/
