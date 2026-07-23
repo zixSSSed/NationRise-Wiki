@@ -76,6 +76,22 @@
   font-weight: 700;
 }
 
+/* Пункты меню слева дышат: строки стояли вплотную и читались как сплошной список */
+.md-nav--primary .md-nav__item {
+  margin-top: .35rem;
+}
+.md-nav--primary .md-nav__link {
+  padding: .12rem 0;
+  line-height: 1.5;
+}
+/* между блоками разделов («Начало игры», «Город и нация») отступ побольше */
+.md-nav--primary .md-nav__item--section {
+  margin-top: 1.1rem;
+}
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  margin-bottom: .2rem;
+}
+
 /* Плашки-подсказки поспокойнее */
 .md-typeset .admonition,
 .md-typeset details {
