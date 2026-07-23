@@ -9,8 +9,8 @@ copyright: NationRise
 theme:
   name: material
   language: ru
-  favicon: assets/favicon.png
-  logo: assets/logo.png
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg          # официальный вектор, белая заливка, без подложки
   font:
     text: Montserrat
     code: JetBrains Mono
