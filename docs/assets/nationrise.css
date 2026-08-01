@@ -108,11 +108,11 @@
   text-decoration: underline;
 }
 
-/* Наказание рядом с правилом — красным, не переносится */
+/* Наказание рядом с правилом — красным */
 .nak {
   color: #ff6b6b;
   font-weight: 700;
-  white-space: nowrap;
+  text-wrap: pretty;   /* длинные формулировки переносятся, а не рвут таблицу */
 }
 [data-md-color-scheme="default"] .nak { color: #c62828; }
 
