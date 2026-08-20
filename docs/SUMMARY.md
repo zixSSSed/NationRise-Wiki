@@ -22,6 +22,8 @@
 
 * [☭ Идеологии](ideology.md)
 * [✝ Религии](religion.md)
+* [🐴 Обозы](caravans.md)
+* [🏛 Чудеса света](wonders.md)
 
 ## Занятия
 
