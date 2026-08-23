@@ -29,6 +29,7 @@
 
 * [🎣 Рыбалка](fishing.md)
 * [🍯 Пасеки и мёд](apiary.md)
+* [🍺 Алковарка](brewing.md)
 * [🎪 Ивенты](events.md)
 * [🗡 PvP](pvp.md)
 * [🧩 Прочие механики](extras.md)
