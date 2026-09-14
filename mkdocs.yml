@@ -37,6 +37,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    - navigation.footer      # «Назад / Далее» внизу страницы, как у PolitMine
     - toc.follow
     - search.suggest
     - search.highlight
